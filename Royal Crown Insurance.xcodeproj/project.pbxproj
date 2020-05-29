@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		240E69AB2480F90300ED4A2C /* AboutRoyalAssistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240E69AA2480F90300ED4A2C /* AboutRoyalAssistViewController.swift */; };
+		2415E3C02481213E00C08420 /* RoyalPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2415E3BF2481213E00C08420 /* RoyalPaymentViewController.swift */; };
+		2415E3C32481240F00C08420 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2415E3C22481240F00C08420 /* WebKit.framework */; };
 		2420DC7724802C2A00EBA792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2420DC7624802C2A00EBA792 /* AppDelegate.swift */; };
 		2420DC7924802C2A00EBA792 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2420DC7824802C2A00EBA792 /* SceneDelegate.swift */; };
 		2420DC7B24802C2A00EBA792 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2420DC7A24802C2A00EBA792 /* MainViewController.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		240E69AA2480F90300ED4A2C /* AboutRoyalAssistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutRoyalAssistViewController.swift; sourceTree = "<group>"; };
+		2415E3BF2481213E00C08420 /* RoyalPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoyalPaymentViewController.swift; sourceTree = "<group>"; };
+		2415E3C22481240F00C08420 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		2420DC7324802C2A00EBA792 /* Royal Crown Insurance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Royal Crown Insurance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2420DC7624802C2A00EBA792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2420DC7824802C2A00EBA792 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,17 +39,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2415E3C32481240F00C08420 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2415E3C12481240F00C08420 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2415E3C22481240F00C08420 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2420DC6A24802C2900EBA792 = {
 			isa = PBXGroup;
 			children = (
 				2420DC7524802C2A00EBA792 /* Royal Crown Insurance */,
 				2420DC7424802C2A00EBA792 /* Products */,
+				2415E3C12481240F00C08420 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +91,7 @@
 				2420DC7A24802C2A00EBA792 /* MainViewController.swift */,
 				2420DC912480626500EBA792 /* RoyalAssistViewController.swift */,
 				240E69AA2480F90300ED4A2C /* AboutRoyalAssistViewController.swift */,
+				2415E3BF2481213E00C08420 /* RoyalPaymentViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -156,6 +171,7 @@
 				2420DC7B24802C2A00EBA792 /* MainViewController.swift in Sources */,
 				2420DC7724802C2A00EBA792 /* AppDelegate.swift in Sources */,
 				2420DC7924802C2A00EBA792 /* SceneDelegate.swift in Sources */,
+				2415E3C02481213E00C08420 /* RoyalPaymentViewController.swift in Sources */,
 				2420DC922480626600EBA792 /* RoyalAssistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
