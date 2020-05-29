@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240E69AB2480F90300ED4A2C /* AboutRoyalAssistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240E69AA2480F90300ED4A2C /* AboutRoyalAssistViewController.swift */; };
 		2420DC7724802C2A00EBA792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2420DC7624802C2A00EBA792 /* AppDelegate.swift */; };
 		2420DC7924802C2A00EBA792 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2420DC7824802C2A00EBA792 /* SceneDelegate.swift */; };
 		2420DC7B24802C2A00EBA792 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2420DC7A24802C2A00EBA792 /* MainViewController.swift */; };
 		2420DC7E24802C2A00EBA792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2420DC7C24802C2A00EBA792 /* Main.storyboard */; };
 		2420DC8324802C3000EBA792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2420DC8124802C3000EBA792 /* LaunchScreen.storyboard */; };
 		2420DC8F248030D300EBA792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2420DC8E248030D300EBA792 /* Assets.xcassets */; };
+		2420DC922480626600EBA792 /* RoyalAssistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2420DC912480626500EBA792 /* RoyalAssistViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		240E69AA2480F90300ED4A2C /* AboutRoyalAssistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutRoyalAssistViewController.swift; sourceTree = "<group>"; };
 		2420DC7324802C2A00EBA792 /* Royal Crown Insurance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Royal Crown Insurance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2420DC7624802C2A00EBA792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2420DC7824802C2A00EBA792 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		2420DC8224802C3000EBA792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2420DC8424802C3000EBA792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2420DC8E248030D300EBA792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2420DC912480626500EBA792 /* RoyalAssistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoyalAssistViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				2420DC7A24802C2A00EBA792 /* MainViewController.swift */,
+				2420DC912480626500EBA792 /* RoyalAssistViewController.swift */,
+				240E69AA2480F90300ED4A2C /* AboutRoyalAssistViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -146,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				240E69AB2480F90300ED4A2C /* AboutRoyalAssistViewController.swift in Sources */,
 				2420DC7B24802C2A00EBA792 /* MainViewController.swift in Sources */,
 				2420DC7724802C2A00EBA792 /* AppDelegate.swift in Sources */,
 				2420DC7924802C2A00EBA792 /* SceneDelegate.swift in Sources */,
+				2420DC922480626600EBA792 /* RoyalAssistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -194,33 +194,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="e1i-zh-jav">
                     <connections>
-                        <segue destination="FKI-OI-4xL" kind="show" id="53x-de-r0a"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="zwQ-RX-ynX"/>
+                        <segue destination="FKI-OI-4xL" kind="show" id="j3g-j7-QiG"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="uIM-gc-5IZ">
                     <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="FhV-mj-NuH"/>
                         <segue destination="zCk-8p-CgJ" kind="show" id="aTn-ii-D6J"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="X3G-gM-4vl">
                     <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="LRn-xu-d9z"/>
                         <segue destination="tMX-2J-HzK" kind="show" id="AWW-MP-LYj"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="UaT-VV-JnD">
                     <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="uhL-ZD-Ba5"/>
                         <segue destination="Xa5-lo-ahe" kind="show" id="D2C-fS-bTD"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="0Ua-ek-wgW">
                     <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="aT3-S8-FdC"/>
                         <segue destination="KOI-iq-QKg" kind="show" id="Lbw-il-yOb"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--What to do if-->
         <scene sceneID="yK6-he-pAy">
             <objects>
                 <viewController id="tMX-2J-HzK" sceneMemberID="viewController">
@@ -230,13 +235,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Vh0-z2-mOo"/>
                     </view>
-                    <navigationItem key="navigationItem" id="DbG-cs-nN7"/>
+                    <navigationItem key="navigationItem" title="What to do if" id="DbG-cs-nN7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3T0-6s-0PF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2462" y="116"/>
         </scene>
-        <!--View Controller-->
+        <!--Servicess-->
         <scene sceneID="N3n-Wg-Lz8">
             <objects>
                 <viewController id="Xa5-lo-ahe" sceneMemberID="viewController">
@@ -246,13 +251,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Qvf-T0-Izz"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2D6-Ss-IPg"/>
+                    <navigationItem key="navigationItem" title="Servicess" id="2D6-Ss-IPg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ak-5Z-XzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2461" y="908"/>
         </scene>
-        <!--View Controller-->
+        <!--About-->
         <scene sceneID="Fcp-m5-E2d">
             <objects>
                 <viewController id="KOI-iq-QKg" sceneMemberID="viewController">
@@ -262,29 +267,290 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="kyM-0k-2nN"/>
                     </view>
-                    <navigationItem key="navigationItem" id="abS-MA-Dej"/>
+                    <navigationItem key="navigationItem" title="About" id="abS-MA-Dej"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tus-Dm-MBS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2461" y="1712"/>
         </scene>
-        <!--View Controller-->
+        <!--Royal assist-->
         <scene sceneID="JLd-yJ-Mfq">
             <objects>
-                <viewController id="FKI-OI-4xL" sceneMemberID="viewController">
+                <viewController id="FKI-OI-4xL" customClass="RoyalAssistViewController" customModule="Royal_Crown_Insurance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C8I-Eo-jTc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZOK-V6-xf8">
+                                <rect key="frame" x="0.0" y="88" width="414" height="775"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVv-iM-1Pa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="253"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="what_to_do_if_image" translatesAutoresizingMaskIntoConstraints="NO" id="mPb-Kc-tw4">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="253"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REPORT AN ACCIDENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pNd-hq-vuT">
+                                                <rect key="frame" x="20" y="114.5" width="374" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="mPb-Kc-tw4" firstAttribute="top" secondItem="HVv-iM-1Pa" secondAttribute="top" id="Eig-s1-z2z"/>
+                                            <constraint firstItem="pNd-hq-vuT" firstAttribute="leading" secondItem="HVv-iM-1Pa" secondAttribute="leading" constant="20" id="Oe0-Kk-DW5"/>
+                                            <constraint firstAttribute="trailing" secondItem="pNd-hq-vuT" secondAttribute="trailing" constant="20" id="Xd7-6x-39I"/>
+                                            <constraint firstAttribute="bottom" secondItem="mPb-Kc-tw4" secondAttribute="bottom" id="k0N-ai-rPx"/>
+                                            <constraint firstItem="pNd-hq-vuT" firstAttribute="centerY" secondItem="HVv-iM-1Pa" secondAttribute="centerY" id="mQk-E9-j8Z"/>
+                                            <constraint firstItem="mPb-Kc-tw4" firstAttribute="leading" secondItem="HVv-iM-1Pa" secondAttribute="leading" id="vAg-QX-yM0"/>
+                                            <constraint firstAttribute="trailing" secondItem="mPb-Kc-tw4" secondAttribute="trailing" id="wmv-Ca-h1Y"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="LdP-Fs-qpg" appends="YES" id="Hhl-Q8-6SY"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BES-TN-j0j">
+                                        <rect key="frame" x="0.0" y="261" width="414" height="253"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="make_a_call_image" translatesAutoresizingMaskIntoConstraints="NO" id="kMj-ns-LwD">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="253"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAKE A CALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dp2-HP-l2T">
+                                                <rect key="frame" x="20" y="114.5" width="374" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="dp2-HP-l2T" secondAttribute="trailing" constant="20" id="AFG-1G-Wku"/>
+                                            <constraint firstAttribute="trailing" secondItem="kMj-ns-LwD" secondAttribute="trailing" id="Hds-wc-JMp"/>
+                                            <constraint firstItem="dp2-HP-l2T" firstAttribute="leading" secondItem="BES-TN-j0j" secondAttribute="leading" constant="20" id="Rmv-av-bn1"/>
+                                            <constraint firstAttribute="bottom" secondItem="kMj-ns-LwD" secondAttribute="bottom" id="TE7-uU-7ta"/>
+                                            <constraint firstItem="kMj-ns-LwD" firstAttribute="leading" secondItem="BES-TN-j0j" secondAttribute="leading" id="gBw-8U-Jfa"/>
+                                            <constraint firstItem="kMj-ns-LwD" firstAttribute="top" secondItem="BES-TN-j0j" secondAttribute="top" id="sYh-Ne-1kS"/>
+                                            <constraint firstItem="dp2-HP-l2T" firstAttribute="centerY" secondItem="BES-TN-j0j" secondAttribute="centerY" id="yG8-v1-hsM"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="14h-Zh-pFh" appends="YES" id="qw6-oK-ach"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXR-YH-unZ">
+                                        <rect key="frame" x="0.0" y="522" width="414" height="253"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="what_to_do_if_image" translatesAutoresizingMaskIntoConstraints="NO" id="q2p-ta-VRy">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="253"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Mf0-vc-zEE" appends="YES" id="lgo-r8-IOy"/>
+                                                </connections>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT ROYAL ASSIST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AVX-HX-7Mm">
+                                                <rect key="frame" x="20" y="114.5" width="374" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="AVX-HX-7Mm" firstAttribute="leading" secondItem="ZXR-YH-unZ" secondAttribute="leading" constant="20" id="G2Y-Qm-hUy"/>
+                                            <constraint firstAttribute="trailing" secondItem="AVX-HX-7Mm" secondAttribute="trailing" constant="20" id="Xn2-Ni-kHC"/>
+                                            <constraint firstAttribute="bottom" secondItem="q2p-ta-VRy" secondAttribute="bottom" id="dUk-s0-lLf"/>
+                                            <constraint firstItem="AVX-HX-7Mm" firstAttribute="centerY" secondItem="ZXR-YH-unZ" secondAttribute="centerY" id="kur-5y-ssM"/>
+                                            <constraint firstAttribute="trailing" secondItem="q2p-ta-VRy" secondAttribute="trailing" id="ooh-qj-Zfm"/>
+                                            <constraint firstItem="q2p-ta-VRy" firstAttribute="top" secondItem="ZXR-YH-unZ" secondAttribute="top" id="rcM-Mr-Iwk"/>
+                                            <constraint firstItem="q2p-ta-VRy" firstAttribute="leading" secondItem="ZXR-YH-unZ" secondAttribute="leading" id="sTs-7I-Wjw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BES-TN-j0j" firstAttribute="leading" secondItem="ZOK-V6-xf8" secondAttribute="leading" id="5tr-4O-Rvo"/>
+                                    <constraint firstItem="HVv-iM-1Pa" firstAttribute="leading" secondItem="ZOK-V6-xf8" secondAttribute="leading" id="FzS-6n-IWX"/>
+                                    <constraint firstAttribute="trailing" secondItem="HVv-iM-1Pa" secondAttribute="trailing" id="ULT-JZ-FVx"/>
+                                    <constraint firstAttribute="trailing" secondItem="BES-TN-j0j" secondAttribute="trailing" id="eSu-C4-0zC"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZXR-YH-unZ" secondAttribute="bottom" id="gvi-jp-w2S"/>
+                                    <constraint firstItem="ZXR-YH-unZ" firstAttribute="leading" secondItem="ZOK-V6-xf8" secondAttribute="leading" id="llF-zV-Fpx"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZXR-YH-unZ" secondAttribute="trailing" id="rqF-mp-bgm"/>
+                                    <constraint firstItem="ZXR-YH-unZ" firstAttribute="top" secondItem="BES-TN-j0j" secondAttribute="bottom" constant="8" id="w5W-qa-dOK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="ZOK-V6-xf8" secondAttribute="bottom" constant="-1" id="21K-JI-T4y"/>
+                            <constraint firstItem="ZOK-V6-xf8" firstAttribute="top" secondItem="KAZ-1O-AeS" secondAttribute="top" id="ABG-LE-le2"/>
+                            <constraint firstItem="ZOK-V6-xf8" firstAttribute="centerX" secondItem="C8I-Eo-jTc" secondAttribute="centerX" id="DqX-yc-0E8"/>
+                            <constraint firstItem="ZOK-V6-xf8" firstAttribute="leading" secondItem="KAZ-1O-AeS" secondAttribute="leading" id="SiV-dg-fIo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KAZ-1O-AeS"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2Jf-M8-sqm"/>
+                    <navigationItem key="navigationItem" title="Royal assist" id="2Jf-M8-sqm">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back_icon" id="V1i-wo-Cgm">
+                            <connections>
+                                <action selector="backButton:" destination="FKI-OI-4xL" id="FPJ-sb-tsa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="34k-Jm-Fxm"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="I2n-xD-gpF" kind="show" id="Yfq-PU-nbx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofO-QO-ORA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="14h-Zh-pFh">
+                    <connections>
+                        <action selector="makeACall:" destination="FKI-OI-4xL" id="PYi-GL-OkH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Mf0-vc-zEE">
+                    <connections>
+                        <segue destination="dI4-Pc-s5G" kind="show" id="3aT-vh-fkX"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="LdP-Fs-qpg">
+                    <connections>
+                        <action selector="reportAnAccident:" destination="FKI-OI-4xL" id="QYN-TY-9eI"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2461" y="-1395"/>
+            <point key="canvasLocation" x="2460.8695652173915" y="-1395.5357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--About royal assist-->
+        <scene sceneID="lyU-hY-Qf3">
+            <objects>
+                <viewController id="I2n-xD-gpF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tjq-JK-HLU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="b1f-LV-3Cv">
+                                <rect key="frame" x="70" y="318" width="274" height="142"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZH2-Qg-34N">
+                                        <rect key="frame" x="0.0" y="0.0" width="274" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Car Reg. No. / Policy No." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="du1-Lz-dlL">
+                                        <rect key="frame" x="0.0" y="54" width="274" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Tel No." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mkP-Rg-bVb">
+                                        <rect key="frame" x="0.0" y="108" width="274" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXt-W2-U8O">
+                                <rect key="frame" x="70" y="604" width="274" height="30"/>
+                                <color key="backgroundColor" red="0.1833450496" green="0.1436605155" blue="0.50450432300000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Report Accident">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" I Agree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOT-ha-RFE">
+                                <rect key="frame" x="70" y="550" width="274" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="qK3-HE-yV5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TI6-pR-QDg">
+                                <rect key="frame" x="282" y="508" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.18303492669999999" green="0.12694871429999999" blue="0.51441442969999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LVd-dT-yOf" firstAttribute="trailing" secondItem="uOT-ha-RFE" secondAttribute="trailing" constant="70" id="5AY-dR-Cv5"/>
+                            <constraint firstItem="b1f-LV-3Cv" firstAttribute="top" secondItem="LVd-dT-yOf" secondAttribute="top" constant="230" id="CD6-Tu-ZFJ"/>
+                            <constraint firstItem="LVd-dT-yOf" firstAttribute="trailing" secondItem="b1f-LV-3Cv" secondAttribute="trailing" constant="70" id="Cav-Fk-06H"/>
+                            <constraint firstItem="tXt-W2-U8O" firstAttribute="top" secondItem="uOT-ha-RFE" secondAttribute="bottom" constant="20" id="Edu-ck-rFR"/>
+                            <constraint firstItem="uOT-ha-RFE" firstAttribute="leading" secondItem="LVd-dT-yOf" secondAttribute="leading" constant="70" id="LgK-FT-5O1"/>
+                            <constraint firstItem="tXt-W2-U8O" firstAttribute="leading" secondItem="LVd-dT-yOf" secondAttribute="leading" constant="70" id="PrK-DT-UHy"/>
+                            <constraint firstItem="LVd-dT-yOf" firstAttribute="trailing" secondItem="tXt-W2-U8O" secondAttribute="trailing" constant="70" id="QMQ-EN-Hpn"/>
+                            <constraint firstItem="uOT-ha-RFE" firstAttribute="top" secondItem="b1f-LV-3Cv" secondAttribute="bottom" constant="90" id="Tm0-kf-1ce"/>
+                            <constraint firstItem="b1f-LV-3Cv" firstAttribute="leading" secondItem="LVd-dT-yOf" secondAttribute="leading" constant="70" id="u7K-zf-FCK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LVd-dT-yOf"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About royal assist" id="CA2-fh-TQf">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back_icon" id="kWn-41-7up"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="TQB-9j-NfE"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbN-3n-NcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3383" y="-2146"/>
+        </scene>
+        <!--About us-->
+        <scene sceneID="l76-dZ-eNq">
+            <objects>
+                <viewController id="dI4-Pc-s5G" customClass="AboutRoyalAssistViewController" customModule="Royal_Crown_Insurance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FM9-y3-ezp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m8C-Xw-rXh">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="m8C-Xw-rXh" firstAttribute="top" secondItem="hF3-kq-RIt" secondAttribute="top" id="JMa-Gj-NDE"/>
+                            <constraint firstItem="m8C-Xw-rXh" firstAttribute="bottom" secondItem="hF3-kq-RIt" secondAttribute="bottom" id="Y1W-3k-DPE"/>
+                            <constraint firstItem="m8C-Xw-rXh" firstAttribute="leading" secondItem="hF3-kq-RIt" secondAttribute="leading" constant="20" id="iOC-YL-SMI"/>
+                            <constraint firstItem="hF3-kq-RIt" firstAttribute="trailing" secondItem="m8C-Xw-rXh" secondAttribute="trailing" constant="20" id="jpX-y7-CLS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hF3-kq-RIt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About us" id="Vdk-Up-k9H">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back_icon" id="yGZ-h1-Zec">
+                            <connections>
+                                <action selector="backButton:" destination="dI4-Pc-s5G" id="pXa-dc-Skm"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="eQn-HL-kjZ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textViewAboutRoyalAssist" destination="m8C-Xw-rXh" id="ypu-At-JK4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yix-il-doH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3382.608695652174" y="-1396.2053571428571"/>
+        </scene>
+        <!--Royal payment-->
         <scene sceneID="qgI-WH-WSa">
             <objects>
                 <viewController id="zCk-8p-CgJ" sceneMemberID="viewController">
@@ -294,7 +560,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="cgO-xx-aRS"/>
                     </view>
-                    <navigationItem key="navigationItem" id="G9d-cq-VeC"/>
+                    <navigationItem key="navigationItem" title="Royal payment" id="G9d-cq-VeC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOW-o9-Iab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,7 +587,10 @@
     </scenes>
     <resources>
         <image name="about_image" width="183" height="195"/>
+        <image name="back_icon" width="13" height="22"/>
         <image name="main_logo" width="143" height="20"/>
+        <image name="make_a_call_image" width="375" height="195"/>
+        <image name="red_logo_icon" width="24" height="24"/>
         <image name="royal_assist_image" width="183" height="195"/>
         <image name="royal_payment_image" width="183" height="195"/>
         <image name="services_image" width="183" height="195"/>
