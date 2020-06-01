@@ -53,5 +53,28 @@ class ServerManager {
             }
         }
     }
+    
+    func getWhatToDoIf(success: @escaping ([[String : Any]]) -> Void) {
+        
+        AF.request("http://31.131.21.105:82/api/v1/accident_instructions",
+                   method: .get,
+                   parameters: nil,
+                   encoding: URLEncoding.default,
+                   headers: nil,
+                   interceptor: nil).responseJSON { (response) in
+                    
+                    switch response.result {
+                    case .success(let value):
+                        guard let array = value as? [[String : Any]] else { return }
+                        
+                        success(array)
+                        
+                    case .failure(let error):
+                        print(error)
+                    }
+                    
+        }
+        
+    }
 
 }

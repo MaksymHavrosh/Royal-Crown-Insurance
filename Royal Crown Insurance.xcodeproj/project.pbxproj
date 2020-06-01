@@ -22,6 +22,8 @@
 		247FB6F62484EFC90034F861 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB6F52484EFC90034F861 /* ServerManager.swift */; };
 		247FB6F8248506FE0034F861 /* ServiceDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB6F7248506FE0034F861 /* ServiceDetailTableViewController.swift */; };
 		247FB6FB24850D0D0034F861 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB6FA24850D0D0034F861 /* DescriptionTableViewCell.swift */; };
+		247FB6FD248520210034F861 /* WhatToDoIfTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB6FC248520210034F861 /* WhatToDoIfTableViewController.swift */; };
+		247FB6FF2485286A0034F861 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB6FE2485286A0034F861 /* ToDoViewController.swift */; };
 		24AFFC302483C89300B0E016 /* BusinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFFC2F2483C89300B0E016 /* BusinesTableViewController.swift */; };
 		24AFFC322483C8D200B0E016 /* PersonalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFFC312483C8D200B0E016 /* PersonalTableViewController.swift */; };
 		47BC39547F40EE279950E86F /* Pods_Royal_Crown_Insurance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C76772B95DE5FDA4333BDE1 /* Pods_Royal_Crown_Insurance.framework */; };
@@ -45,6 +47,8 @@
 		247FB6F52484EFC90034F861 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		247FB6F7248506FE0034F861 /* ServiceDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailTableViewController.swift; sourceTree = "<group>"; };
 		247FB6FA24850D0D0034F861 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		247FB6FC248520210034F861 /* WhatToDoIfTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToDoIfTableViewController.swift; sourceTree = "<group>"; };
+		247FB6FE2485286A0034F861 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		24AFFC2F2483C89300B0E016 /* BusinesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinesTableViewController.swift; sourceTree = "<group>"; };
 		24AFFC312483C8D200B0E016 /* PersonalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTableViewController.swift; sourceTree = "<group>"; };
 		3266294C3BAE41744F577009 /* Pods-Royal Crown Insurance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Royal Crown Insurance.debug.xcconfig"; path = "Target Support Files/Pods-Royal Crown Insurance/Pods-Royal Crown Insurance.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,7 +120,8 @@
 				2420DC912480626500EBA792 /* RoyalAssistViewController.swift */,
 				240E69AA2480F90300ED4A2C /* AboutRoyalAssistViewController.swift */,
 				2415E3BF2481213E00C08420 /* RoyalPaymentViewController.swift */,
-				24AFFC332483C95100B0E016 /* ServicesViewController */,
+				247FB700248528D10034F861 /* WhatToDoIf */,
+				24AFFC332483C95100B0E016 /* Services */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -145,7 +150,16 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		24AFFC332483C95100B0E016 /* ServicesViewController */ = {
+		247FB700248528D10034F861 /* WhatToDoIf */ = {
+			isa = PBXGroup;
+			children = (
+				247FB6FC248520210034F861 /* WhatToDoIfTableViewController.swift */,
+				247FB6FE2485286A0034F861 /* ToDoViewController.swift */,
+			);
+			path = WhatToDoIf;
+			sourceTree = "<group>";
+		};
+		24AFFC332483C95100B0E016 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				2415E3C42481312D00C08420 /* ServicesViewController.swift */,
@@ -153,7 +167,7 @@
 				24AFFC312483C8D200B0E016 /* PersonalTableViewController.swift */,
 				247FB6F7248506FE0034F861 /* ServiceDetailTableViewController.swift */,
 			);
-			path = ServicesViewController;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		676F52188A2B7B6C58462AEE /* Pods */ = {
@@ -286,9 +300,11 @@
 				2415E3C52481312D00C08420 /* ServicesViewController.swift in Sources */,
 				2420DC7B24802C2A00EBA792 /* MainViewController.swift in Sources */,
 				2420DC7724802C2A00EBA792 /* AppDelegate.swift in Sources */,
+				247FB6FD248520210034F861 /* WhatToDoIfTableViewController.swift in Sources */,
 				2420DC7924802C2A00EBA792 /* SceneDelegate.swift in Sources */,
 				247FB6FB24850D0D0034F861 /* DescriptionTableViewCell.swift in Sources */,
 				2415E3C02481213E00C08420 /* RoyalPaymentViewController.swift in Sources */,
+				247FB6FF2485286A0034F861 /* ToDoViewController.swift in Sources */,
 				247FB6F8248506FE0034F861 /* ServiceDetailTableViewController.swift in Sources */,
 				24AFFC302483C89300B0E016 /* BusinesTableViewController.swift in Sources */,
 				2420DC922480626600EBA792 /* RoyalAssistViewController.swift in Sources */,

@@ -44,6 +44,7 @@ class ServiceDetailTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ServiceDetail", for: indexPath)
             cell.textLabel?.text = title
             cell.textLabel?.textAlignment = .center
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
             return cell
             
         } else {
@@ -51,6 +52,7 @@ class ServiceDetailTableViewController: UITableViewController {
             if let description = serviceObject?["description"] as? String {
                 cell.descriptionTextLabel.text = description.htmlToString
             }
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
             return cell
         }
     }

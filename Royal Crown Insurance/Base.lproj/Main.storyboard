@@ -207,7 +207,7 @@
                 <tapGestureRecognizer id="X3G-gM-4vl">
                     <connections>
                         <outlet property="delegate" destination="BYZ-38-t0r" id="LRn-xu-d9z"/>
-                        <segue destination="tMX-2J-HzK" kind="show" id="AWW-MP-LYj"/>
+                        <segue destination="NUE-C0-yee" kind="show" id="xXd-yj-FcQ"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="UaT-VV-JnD">
@@ -224,25 +224,6 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
-        </scene>
-        <!--What to do if-->
-        <scene sceneID="yK6-he-pAy">
-            <objects>
-                <viewController id="tMX-2J-HzK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IkN-2g-ZWh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Vh0-z2-mOo"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="What to do if" id="DbG-cs-nN7">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="back_icon" id="Wkv-hf-Sr3"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="pDh-a2-oJV"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3T0-6s-0PF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2460.8695652173915" y="115.84821428571428"/>
         </scene>
         <!--Servicess-->
         <scene sceneID="N3n-Wg-Lz8">
@@ -423,6 +404,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8az-T8-jbO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3383" y="467"/>
+        </scene>
+        <!--To Do View Controller-->
+        <scene sceneID="0LZ-7A-kNC">
+            <objects>
+                <viewController id="56t-MA-Wh0" customClass="ToDoViewController" customModule="Royal_Crown_Insurance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Y6-U3-aAl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODT-oN-Qkm">
+                                <rect key="frame" x="20" y="138" width="374" height="724"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6AU-Nq-lix">
+                                <rect key="frame" x="0.0" y="88" width="414" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYp-N2-606">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="30"/>
+                                        <connections>
+                                            <action selector="tab1Content:" destination="56t-MA-Wh0" eventType="touchUpInside" id="tS5-ej-Hzh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPN-T6-9pv">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="30"/>
+                                        <color key="backgroundColor" red="0.35261899229999999" green="0.31952214239999999" blue="0.60762864350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tab2Content:" destination="56t-MA-Wh0" eventType="touchUpInside" id="dlG-Xj-oVL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="h3x-FE-1xn" firstAttribute="trailing" secondItem="ODT-oN-Qkm" secondAttribute="trailing" constant="20" id="7Yk-1A-IxZ"/>
+                            <constraint firstItem="ODT-oN-Qkm" firstAttribute="top" secondItem="6AU-Nq-lix" secondAttribute="bottom" constant="20" id="Lpf-Yv-VeZ"/>
+                            <constraint firstItem="6AU-Nq-lix" firstAttribute="leading" secondItem="h3x-FE-1xn" secondAttribute="leading" id="YCC-Ha-EXh"/>
+                            <constraint firstItem="6AU-Nq-lix" firstAttribute="top" secondItem="h3x-FE-1xn" secondAttribute="top" id="du6-ij-1lH"/>
+                            <constraint firstItem="ODT-oN-Qkm" firstAttribute="leading" secondItem="h3x-FE-1xn" secondAttribute="leading" constant="20" id="e7y-NB-Rzh"/>
+                            <constraint firstItem="ODT-oN-Qkm" firstAttribute="bottom" secondItem="h3x-FE-1xn" secondAttribute="bottom" id="l8E-P8-y4B"/>
+                            <constraint firstItem="h3x-FE-1xn" firstAttribute="trailing" secondItem="6AU-Nq-lix" secondAttribute="trailing" id="uYe-zT-YTF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h3x-FE-1xn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="f23-ce-sOB">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back_icon" id="uwP-If-hwT">
+                            <connections>
+                                <action selector="backButton:" destination="56t-MA-Wh0" id="mpo-Oh-ORX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="J5a-fA-jfy"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tab1Button" destination="DYp-N2-606" id="KHc-iE-8zv"/>
+                        <outlet property="tab2Button" destination="jPN-T6-9pv" id="OeG-vo-NHP"/>
+                        <outlet property="textView" destination="ODT-oN-Qkm" id="cMc-5f-Bkd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWy-is-F43" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4298.5507246376819" y="97.767857142857139"/>
         </scene>
         <!--Service Detail Table View Controller-->
         <scene sceneID="eVx-4G-x6k">
@@ -898,7 +946,11 @@
                         <viewLayoutGuide key="safeArea" id="cgO-xx-aRS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Royal payment" id="G9d-cq-VeC">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="back_icon" id="e8d-pm-aQO"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back_icon" id="e8d-pm-aQO">
+                            <connections>
+                                <action selector="backButton:" destination="zCk-8p-CgJ" id="udN-xu-MO4"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="1pO-US-a2Y"/>
                     </navigationItem>
                     <connections>
@@ -909,6 +961,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOW-o9-Iab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2460.8695652173915" y="-646.20535714285711"/>
+        </scene>
+        <!--What to do If-->
+        <scene sceneID="1E5-oe-pXT">
+            <objects>
+                <tableViewController id="NUE-C0-yee" customClass="WhatToDoIfTableViewController" customModule="Royal_Crown_Insurance" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kGC-rp-KSi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WhatToDoIfCell" id="cUD-aq-2e3">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cUD-aq-2e3" id="XfW-vm-ZDw">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NUE-C0-yee" id="pIg-57-8VQ"/>
+                            <outlet property="delegate" destination="NUE-C0-yee" id="lfL-uq-EqH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="What to do If" id="3Iq-uA-f22">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back_icon" id="4gG-2l-gXv">
+                            <connections>
+                                <action selector="backButton:" destination="NUE-C0-yee" id="V4h-lL-P1S"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="rEU-Al-fxf"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="56t-MA-Wh0" kind="show" identifier="ShowToDo" id="TDh-av-Ff3"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Za-SK-sv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2461" y="99"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gts-Dp-Ye5">
