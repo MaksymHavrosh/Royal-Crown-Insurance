@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import Alamofire
 
 class AboutRoyalAssistViewController: UIViewController {
 
     @IBOutlet private weak var textViewAboutRoyalAssist: UITextView!
     
+    //MARK: - LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        textViewAboutRoyalAssist.text = NSLocalizedString("About royal assist", comment: "")
+        
+        ServerManager.manager.getAboutRoyalAssist { (text) in
+            self.textViewAboutRoyalAssist.text = text.htmlToString
+        }
     }
 
 }
