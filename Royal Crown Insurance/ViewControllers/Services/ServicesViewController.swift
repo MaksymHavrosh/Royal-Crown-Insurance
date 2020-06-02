@@ -22,12 +22,17 @@ class ServicesViewController: UIViewController {
 
 }
 
-//MARK: - Private
+//MARK: - Actions
 
 private extension ServicesViewController {
     
     @IBAction func backButton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func homeButton(_ sender: Any) {
+        guard let vc = navigationController?.viewControllers[0] else { return }
+        navigationController?.popToViewController(vc, animated: false)
     }
     
 }

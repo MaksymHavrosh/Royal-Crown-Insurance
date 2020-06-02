@@ -65,4 +65,9 @@ private extension ToDoViewController {
         textView.text = text.htmlToString
     }
     
+    @IBAction func homeButton(_ sender: Any) {
+        guard let vc = navigationController?.viewControllers[0] else { return }
+        navigationController?.popToViewController(vc, animated: false)
+    }
+    
 }

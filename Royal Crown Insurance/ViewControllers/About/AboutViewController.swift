@@ -27,4 +27,9 @@ private extension AboutViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func homeButton(_ sender: Any) {
+        guard let vc = navigationController?.viewControllers[0] else { return }
+        navigationController?.popToViewController(vc, animated: false)
+    }
+    
 }

@@ -14,7 +14,7 @@ class E_nsuredViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    private let linkForThePayments = "http://cw.royalcrowninsurance.eu/Login.aspx?ReturnUrl=%2f"
+    private let link = "http://cw.royalcrowninsurance.eu/Login.aspx?ReturnUrl=%2f"
     
     //MARK: - LifeCycle
 
@@ -39,7 +39,7 @@ extension E_nsuredViewController: WKNavigationDelegate {
 extension E_nsuredViewController {
     
     func showAlert() {
-        let alert = UIAlertController(title: "Confirm", message: "You want to go to an external site?\n\(linkForThePayments)", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Confirm", message: "You want to go to an external site?\n\(link)", preferredStyle: .alert)
         
         let cancel = UIAlertAction(title: "Cancel", style: .cancel) { _ in
             self.navigationController?.popViewController(animated: true)
@@ -55,7 +55,7 @@ extension E_nsuredViewController {
     }
     
     func showWebView() {
-        if let url = URL(string: linkForThePayments) {
+        if let url = URL(string: link) {
             activityIndicator.startAnimating()
             webView.navigationDelegate = self
             webView.load(URLRequest(url: url))
@@ -70,6 +70,11 @@ extension E_nsuredViewController {
     
     @IBAction func backButton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func homeButton(_ sender: Any) {
+        guard let vc = navigationController?.viewControllers[0] else { return }
+        navigationController?.popToViewController(vc, animated: false)
     }
     
 }

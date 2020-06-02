@@ -310,7 +310,11 @@
                                 <action selector="backButton:" destination="Xa5-lo-ahe" id="FQ8-ED-98N"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="nlf-nS-Dhu"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="nlf-nS-Dhu">
+                            <connections>
+                                <action selector="homeButton:" destination="Xa5-lo-ahe" id="67L-xp-WAC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ak-5Z-XzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -356,7 +360,11 @@
                                 <action selector="backButton:" destination="dW7-Pf-Dn6" id="qZl-Xl-NeX"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="kXr-WM-wih"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="kXr-WM-wih">
+                            <connections>
+                                <action selector="homeButton:" destination="dW7-Pf-Dn6" id="0vm-dd-nRj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="S3w-B5-Rk6" kind="show" identifier="ShowServiceDetail" id="HLl-u2-hBZ"/>
@@ -395,7 +403,11 @@
                                 <action selector="backButton:" destination="7lT-Rf-2Td" id="X5m-1u-JfJ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="GM2-0h-Nrn"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="GM2-0h-Nrn">
+                            <connections>
+                                <action selector="homeButton:" destination="7lT-Rf-2Td" id="s5T-Cz-lTQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="S3w-B5-Rk6" kind="show" identifier="ShowServiceDetail" id="tru-0R-kgS"/>
@@ -463,7 +475,11 @@
                                 <action selector="backButton:" destination="56t-MA-Wh0" id="mpo-Oh-ORX"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="J5a-fA-jfy"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="J5a-fA-jfy">
+                            <connections>
+                                <action selector="homeButton:" destination="56t-MA-Wh0" id="TbQ-ut-khl"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tab1Button" destination="DYp-N2-606" id="KHc-iE-8zv"/>
@@ -529,7 +545,11 @@
                                 <action selector="backButton:" destination="S3w-B5-Rk6" id="GeK-3b-gX0"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="t6H-kX-Fr0"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="t6H-kX-Fr0">
+                            <connections>
+                                <action selector="homeButton:" destination="S3w-B5-Rk6" id="dOT-VH-Kv0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CK0-DQ-1VL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -649,7 +669,11 @@
                                 <action selector="backButton:" destination="KOI-iq-QKg" id="tOI-ma-83h"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="9TH-Cz-YAh"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="9TH-Cz-YAh">
+                            <connections>
+                                <action selector="homeButton:" destination="KOI-iq-QKg" id="uwa-2m-d0D"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tus-Dm-MBS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -708,7 +732,11 @@
                                 <action selector="backButton:" destination="foa-oz-BOG" id="Ip4-UR-SXg"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="seh-ob-ufT"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="seh-ob-ufT">
+                            <connections>
+                                <action selector="homeButton:" destination="foa-oz-BOG" id="Y8G-sS-Wgx"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="1kc-uT-ZqE" id="Kqz-Bb-WRc"/>
@@ -717,7 +745,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSA-4c-qnf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1469.5652173913045" y="2373.8839285714284"/>
+            <point key="canvasLocation" x="2461" y="2336"/>
         </scene>
         <!--Branches-->
         <scene sceneID="Dev-Pp-GAJ">
@@ -735,12 +763,16 @@
                                 <action selector="backButton:" destination="nFF-LI-vLi" id="qa0-mW-ahx"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="fWd-JL-LE7"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="fWd-JL-LE7">
+                            <connections>
+                                <action selector="homeButton:" destination="nFF-LI-vLi" id="lzw-xt-agv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HIx-KX-b5B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2460.8695652173915" y="2374.5535714285711"/>
+            <point key="canvasLocation" x="3383" y="1977"/>
         </scene>
         <!--About us-->
         <scene sceneID="IvU-df-yVQ">
@@ -773,7 +805,11 @@
                                 <action selector="backButton:" destination="Jw9-gs-5xo" id="VJT-yZ-a9a"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="An9-Cm-rRP"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="An9-Cm-rRP">
+                            <connections>
+                                <action selector="homeButton:" destination="Jw9-gs-5xo" id="O1y-Ma-uGL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="textView" destination="qep-5E-yOO" id="ijy-TM-Bwt"/>
@@ -781,7 +817,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsO-rT-glQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3383" y="1988"/>
+            <point key="canvasLocation" x="4299" y="1588"/>
         </scene>
         <!--Royal assist-->
         <scene sceneID="JLd-yJ-Mfq">
@@ -906,7 +942,11 @@
                                 <action selector="backButton:" destination="FKI-OI-4xL" id="dkY-lJ-EyG"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="34k-Jm-Fxm"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="34k-Jm-Fxm">
+                            <connections>
+                                <action selector="homeButton:" destination="FKI-OI-4xL" id="GFz-AS-kra"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="I2n-xD-gpF" kind="show" id="Yfq-PU-nbx"/>
@@ -1049,7 +1089,11 @@
                                 <action selector="backButton:" destination="dI4-Pc-s5G" id="pXa-dc-Skm"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="eQn-HL-kjZ"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="eQn-HL-kjZ">
+                            <connections>
+                                <action selector="homeButton:" destination="dI4-Pc-s5G" id="nL4-Qa-x1z"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="textViewAboutRoyalAssist" destination="m8C-Xw-rXh" id="ypu-At-JK4"/>
@@ -1097,7 +1141,11 @@
                                 <action selector="backButton:" destination="zCk-8p-CgJ" id="udN-xu-MO4"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="1pO-US-a2Y"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="1pO-US-a2Y">
+                            <connections>
+                                <action selector="homeButton:" destination="zCk-8p-CgJ" id="ivQ-pn-mu2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="eks-DE-Yuh" id="tuC-Tn-Wnb"/>
@@ -1137,7 +1185,11 @@
                                 <action selector="backButton:" destination="NUE-C0-yee" id="V4h-lL-P1S"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="rEU-Al-fxf"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="red_logo_icon" id="rEU-Al-fxf">
+                            <connections>
+                                <action selector="homeButton:" destination="NUE-C0-yee" id="gUk-ep-xpr"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="56t-MA-Wh0" kind="show" identifier="ShowToDo" id="TDh-av-Ff3"/>
