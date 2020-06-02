@@ -14,12 +14,17 @@ class E_nsuredViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    private let link = "http://cw.royalcrowninsurance.eu/Login.aspx?ReturnUrl=%2f"
+    private var link: String?
     
     //MARK: - LifeCycle
 
     override func viewWillAppear(_ animated: Bool) {
-        showAlert()
+        
+        ServerManager.manager.getInfo { (infoDict) in
+            guard let link = infoDict["e_nsured_website"] as? String else { return }
+            self.link = link
+            self.showAlert()
+        }
     }
 
 }
@@ -39,7 +44,7 @@ extension E_nsuredViewController: WKNavigationDelegate {
 extension E_nsuredViewController {
     
     func showAlert() {
-        let alert = UIAlertController(title: "Confirm", message: "You want to go to an external site?\n\(link)", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Confirm", message: "You want to go to an external site?\n\(link ?? "No link!!!")", preferredStyle: .alert)
         
         let cancel = UIAlertAction(title: "Cancel", style: .cancel) { _ in
             self.navigationController?.popViewController(animated: true)
@@ -55,7 +60,7 @@ extension E_nsuredViewController {
     }
     
     func showWebView() {
-        if let url = URL(string: link) {
+        if let link = link, let url = URL(string: link) {
             activityIndicator.startAnimating()
             webView.navigationDelegate = self
             webView.load(URLRequest(url: url))

@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import GoogleMaps
 
-class BranchesViewController: UIViewController, GMSMapViewDelegate {
+class BranchesViewController: UIViewController {
     
     //MARK: - LifeCycle
     
@@ -35,11 +35,14 @@ class BranchesViewController: UIViewController, GMSMapViewDelegate {
         }
     }
     
-    //MARK: - GMSMapViewDelegate
+}
+
+//MARK: - GMSMapViewDelegate
+
+extension BranchesViewController: GMSMapViewDelegate {
     
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
         marker.icon = UIImage(named: "pin_active_icon")
-        
         return true
     }
     

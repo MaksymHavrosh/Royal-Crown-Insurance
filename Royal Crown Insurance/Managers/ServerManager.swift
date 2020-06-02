@@ -17,9 +17,7 @@ class ServerManager {
         
         AF.request("http://31.131.21.105:82/api/v1/about_royal_assist",
                    method: .get,
-                   encoding: URLEncoding.default,
-                   headers: nil,
-                   interceptor: nil).responseJSON { (response) in
+                   encoding: URLEncoding.default).responseJSON { (response) in
                     
                     switch response.result {
                     case .success(let value):
@@ -38,9 +36,7 @@ class ServerManager {
         AF.request("http://31.131.21.105:82/api/v1/services",
                    method: .get,
                    parameters: params,
-                   encoding: URLEncoding.default,
-                   headers: nil,
-                   interceptor: nil).responseJSON { (response) in
+                   encoding: URLEncoding.default).responseJSON { (response) in
                     
                     switch response.result {
                     case .success(let value):
@@ -58,10 +54,7 @@ class ServerManager {
         
         AF.request("http://31.131.21.105:82/api/v1/accident_instructions",
                    method: .get,
-                   parameters: nil,
-                   encoding: URLEncoding.default,
-                   headers: nil,
-                   interceptor: nil).responseJSON { (response) in
+                   encoding: URLEncoding.default).responseJSON { (response) in
                     
                     switch response.result {
                     case .success(let value):
@@ -72,7 +65,6 @@ class ServerManager {
                     case .failure(let error):
                         print(error)
                     }
-                    
         }
         
     }
@@ -81,9 +73,7 @@ class ServerManager {
         
         AF.request("http://31.131.21.105:82/api/v1/about_us",
                    method: .get,
-                   parameters: nil,
-                   encoding: URLEncoding.default,
-                   interceptor: nil).responseJSON { (response) in
+                   encoding: URLEncoding.default).responseJSON { (response) in
                     
                     switch response.result {
                     case .success(let value):
@@ -94,7 +84,6 @@ class ServerManager {
                     case .failure(let error):
                         print(error)
                     }
-                    
         }
         
     }
@@ -103,9 +92,7 @@ class ServerManager {
         
         AF.request("http://31.131.21.105:82/api/v1/branches",
                    method: .get,
-                   parameters: nil,
-                   encoding: URLEncoding.default,
-                   interceptor: nil).responseJSON { (response) in
+                   encoding: URLEncoding.default).responseJSON { (response) in
                     
                     switch response.result {
                     case .success(let value):
@@ -121,6 +108,25 @@ class ServerManager {
                         
                     case .failure(let error):
                         print(error)
+                    }
+        }
+        
+    }
+    
+    func getInfo(success: @escaping ([String: Any]) -> Void) {
+        
+        AF.request("http://31.131.21.105:82/api/v1/contacts",
+                   method: .get,
+                   encoding: URLEncoding.default).responseJSON { (response) in
+                    
+                    switch response.result {
+                    case .success(let value):
+                        guard let array = value as? [String: Any] else { return }
+                        
+                        success(array)
+                        
+                    case .failure(let failure):
+                        print(failure)
                     }
                     
         }

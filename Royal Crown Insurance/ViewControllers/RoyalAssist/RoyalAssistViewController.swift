@@ -10,10 +10,17 @@ import UIKit
 
 class RoyalAssistViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
+    private var phoneNumber: String?
+    
     //MARK: - LifeCycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ServerManager.manager.getInfo { (infoDict) in
+            guard let link = infoDict["phone"] as? String else { return }
+            self.phoneNumber = link
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,7 +47,7 @@ private extension RoyalAssistViewController {
     
     @IBAction func makeACall(_ sender: Any) {
         
-        guard let number = URL(string: "tel://77777773") else { return }
+        guard let phoneNumber = phoneNumber, let number = URL(string: "tel:\(phoneNumber)") else { return }
         UIApplication.shared.open(number, options: [:], completionHandler: nil)
     }
     
