@@ -76,5 +76,55 @@ class ServerManager {
         }
         
     }
+    
+    func getAboutUs(success: @escaping (String) -> Void) {
+        
+        AF.request("http://31.131.21.105:82/api/v1/about_us",
+                   method: .get,
+                   parameters: nil,
+                   encoding: URLEncoding.default,
+                   interceptor: nil).responseJSON { (response) in
+                    
+                    switch response.result {
+                    case .success(let value):
+                        guard let dict = value as? [String: Any], let text = dict["about_us"] as? String else { return }
+                        
+                        success(text)
+                        
+                    case .failure(let error):
+                        print(error)
+                    }
+                    
+        }
+        
+    }
+    
+    func getBranches(success: @escaping ([Marker]) -> Void) {
+        
+        AF.request("http://31.131.21.105:82/api/v1/branches",
+                   method: .get,
+                   parameters: nil,
+                   encoding: URLEncoding.default,
+                   interceptor: nil).responseJSON { (response) in
+                    
+                    switch response.result {
+                    case .success(let value):
+                        guard let array = value as? [[String: Any]] else { return }
+                        var markers = [Marker]()
+                        
+                        for objectDict in array {
+                            let marker = Marker(dict: objectDict)
+                            markers.append(marker)
+                        }
+                        
+                        success(markers)
+                        
+                    case .failure(let error):
+                        print(error)
+                    }
+                    
+        }
+        
+    }
 
 }
