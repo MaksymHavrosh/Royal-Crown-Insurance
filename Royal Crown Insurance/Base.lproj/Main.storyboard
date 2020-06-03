@@ -745,7 +745,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSA-4c-qnf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2461" y="2336"/>
+            <point key="canvasLocation" x="2460.8695652173915" y="2335.7142857142858"/>
         </scene>
         <!--Branches-->
         <scene sceneID="Dev-Pp-GAJ">
@@ -754,7 +754,78 @@
                     <view key="view" contentMode="scaleToFill" id="TGY-Zw-nxb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nm2-hP-p2u">
+                                <rect key="frame" x="0.0" y="620.5" width="414" height="275.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNV-4U-chc">
+                                        <rect key="frame" x="30" y="30" width="354" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMy-wo-fTO">
+                                        <rect key="frame" x="20" y="70.5" width="374" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fax" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbu-XQ-eRi">
+                                        <rect key="frame" x="20" y="132.5" width="374" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1l-76-eGl">
+                                        <rect key="frame" x="20" y="163.5" width="374" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postal code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h4-Ji-fYN">
+                                        <rect key="frame" x="20" y="194.5" width="374" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39U-8X-tAa">
+                                        <rect key="frame" x="20" y="101.5" width="374" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ZNV-4U-chc" firstAttribute="leading" secondItem="nm2-hP-p2u" secondAttribute="leading" constant="30" id="28t-hj-tEQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="aMy-wo-fTO" secondAttribute="trailing" constant="20" id="49e-YG-QAF"/>
+                                    <constraint firstItem="5h4-Ji-fYN" firstAttribute="leading" secondItem="nm2-hP-p2u" secondAttribute="leading" constant="20" id="75m-Q7-LeQ"/>
+                                    <constraint firstItem="ZNV-4U-chc" firstAttribute="top" secondItem="nm2-hP-p2u" secondAttribute="top" constant="30" id="FWY-wJ-qv6"/>
+                                    <constraint firstAttribute="trailing" secondItem="39U-8X-tAa" secondAttribute="trailing" constant="20" id="Hpg-i3-pSj"/>
+                                    <constraint firstItem="5h4-Ji-fYN" firstAttribute="top" secondItem="z1l-76-eGl" secondAttribute="bottom" constant="10" id="KHd-PA-SQr"/>
+                                    <constraint firstItem="39U-8X-tAa" firstAttribute="top" secondItem="aMy-wo-fTO" secondAttribute="bottom" constant="10" id="Qac-1T-4Ld"/>
+                                    <constraint firstAttribute="trailing" secondItem="lbu-XQ-eRi" secondAttribute="trailing" constant="20" id="SeT-YL-5kc"/>
+                                    <constraint firstItem="z1l-76-eGl" firstAttribute="leading" secondItem="nm2-hP-p2u" secondAttribute="leading" constant="20" id="UL6-vK-7WA"/>
+                                    <constraint firstItem="aMy-wo-fTO" firstAttribute="leading" secondItem="nm2-hP-p2u" secondAttribute="leading" constant="20" id="YVZ-gD-mcz"/>
+                                    <constraint firstAttribute="trailing" secondItem="5h4-Ji-fYN" secondAttribute="trailing" constant="20" id="fCS-hA-e07"/>
+                                    <constraint firstItem="39U-8X-tAa" firstAttribute="leading" secondItem="nm2-hP-p2u" secondAttribute="leading" constant="20" id="joo-5W-3Dj"/>
+                                    <constraint firstItem="lbu-XQ-eRi" firstAttribute="top" secondItem="39U-8X-tAa" secondAttribute="bottom" constant="10" id="khp-jC-IRP"/>
+                                    <constraint firstItem="lbu-XQ-eRi" firstAttribute="leading" secondItem="nm2-hP-p2u" secondAttribute="leading" constant="20" id="nne-8X-nQt"/>
+                                    <constraint firstAttribute="bottom" secondItem="5h4-Ji-fYN" secondAttribute="bottom" constant="60" id="otX-vw-z1J"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZNV-4U-chc" secondAttribute="trailing" constant="30" id="ql8-tF-kT1"/>
+                                    <constraint firstItem="aMy-wo-fTO" firstAttribute="top" secondItem="ZNV-4U-chc" secondAttribute="bottom" constant="20" id="tVg-2T-Shh"/>
+                                    <constraint firstItem="z1l-76-eGl" firstAttribute="top" secondItem="lbu-XQ-eRi" secondAttribute="bottom" constant="10" id="xTc-7W-CzX"/>
+                                    <constraint firstAttribute="trailing" secondItem="z1l-76-eGl" secondAttribute="trailing" constant="20" id="zKX-gN-hzP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="nm2-hP-p2u" firstAttribute="leading" secondItem="848-EM-vBU" secondAttribute="leading" id="17b-BN-VkA"/>
+                            <constraint firstItem="nm2-hP-p2u" firstAttribute="trailing" secondItem="848-EM-vBU" secondAttribute="trailing" id="R9i-Uk-xyK"/>
+                            <constraint firstAttribute="bottom" secondItem="nm2-hP-p2u" secondAttribute="bottom" id="rlE-V6-YbD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="848-EM-vBU"/>
                     </view>
                     <navigationItem key="navigationItem" title="Branches" id="qo4-g0-BJc">
@@ -769,10 +840,19 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addressLabel" destination="aMy-wo-fTO" id="Si8-b8-Qgo"/>
+                        <outlet property="detailMarkerView" destination="nm2-hP-p2u" id="m1U-BQ-XlD"/>
+                        <outlet property="emailLabel" destination="z1l-76-eGl" id="FCY-uQ-6R3"/>
+                        <outlet property="faxLabel" destination="lbu-XQ-eRi" id="Z8D-ca-8Fi"/>
+                        <outlet property="phoneLabel" destination="39U-8X-tAa" id="3FP-hv-NOk"/>
+                        <outlet property="postalCodeLabel" destination="5h4-Ji-fYN" id="Uaj-eM-DOc"/>
+                        <outlet property="titleLabel" destination="ZNV-4U-chc" id="fcc-mH-S0B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HIx-KX-b5B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3383" y="1977"/>
+            <point key="canvasLocation" x="3382.608695652174" y="1976.7857142857142"/>
         </scene>
         <!--About us-->
         <scene sceneID="IvU-df-yVQ">
@@ -1219,7 +1299,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HLl-u2-hBZ"/>
+        <segue reference="tru-0R-kgS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="about_image" width="183" height="195"/>

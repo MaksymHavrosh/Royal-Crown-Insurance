@@ -12,12 +12,26 @@ import GoogleMaps
 
 class BranchesViewController: UIViewController {
     
+    @IBOutlet weak var detailMarkerView: UIView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var faxLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var postalCodeLabel: UILabel!
+    
+    var gMarkers: [GMSMarker]?
+    var markers: [Marker]?
+    
+    
     //MARK: - LifeCycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ServerManager.manager.getBranches { (markers) in
+            self.markers = markers
+            
             let camera = GMSCameraPosition.camera(withLatitude: markers.first?.latitude ?? 0, longitude: markers.first?.longitude ?? 0, zoom: 7.0)
             let mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
             self.view.addSubview(mapView)
@@ -31,7 +45,10 @@ class BranchesViewController: UIViewController {
                 gMarker.snippet = marker.address.htmlToString
                 gMarker.map = mapView
                 gMarker.icon = UIImage(named: "pin_passive_icon")
+                
+                self.gMarkers?.append(gMarker)
             }
+            self.view.bringSubviewToFront(self.detailMarkerView)
         }
     }
     
@@ -42,8 +59,32 @@ class BranchesViewController: UIViewController {
 extension BranchesViewController: GMSMapViewDelegate {
     
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        guard let markers = markers else { return false }
         marker.icon = UIImage(named: "pin_active_icon")
-        return true
+        
+        for markerObject in markers {
+            
+            guard marker.title == markerObject.title, let index = markers.firstIndex(of: markerObject) else { continue }
+            let marker = markers[index]
+            
+            titleLabel.text = marker.title
+            addressLabel.text = marker.address.htmlToString
+            phoneLabel.text = marker.phone
+            faxLabel.text = marker.fax
+            emailLabel.text = marker.email
+            postalCodeLabel.text = marker.postalCode
+            
+            detailMarkerView.isHidden = false
+        }
+        return false
+    }
+    
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        detailMarkerView.isHidden = true
+    }
+    
+    func mapView(_ mapView: GMSMapView, didCloseInfoWindowOf marker: GMSMarker) {
+        marker.icon = UIImage(named: "pin_passive_icon")
     }
     
 }
