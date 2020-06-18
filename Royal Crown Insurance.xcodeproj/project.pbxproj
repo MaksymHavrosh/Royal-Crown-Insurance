@@ -253,6 +253,7 @@
 				TargetAttributes = {
 					2420DC7224802C2A00EBA792 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -524,7 +525,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "MG.Royal-Crown-Insurance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -543,7 +544,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "MG.Royal-Crown-Insurance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
